@@ -4,7 +4,7 @@ import logo from '../assets/logo.png'
 import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { links } from '../utils/constants'
-import CartButtons from './CartButtons'
+import CartButtons from './CartWidget'
 import { useProductsContext } from '../context/products_context'
 import { useUserContext } from '../context/user_context'
 
