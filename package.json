@@ -1,5 +1,6 @@
 {
   "name": "store",
+  "homepage": "https://rediberry.github.io/Coderhouse-React-final-project-Shopping-cart",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,17 +17,20 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "react-sweetalert2": "^0.5.2",
     "stripe": "^8.130.0",
     "styled-components": "^5.3.5",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI= react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "netlify": "netlify dev",
-    "dev": "netlify dev"
+    "dev": "netlify dev",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +51,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "netlify-cli": "^3.10.1"
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Navbar, ItemListContainer, Sidebar, Footer } from './components'
+import { Navbar, ItemListContainer, Sidebar, Footer} from './components'
 
 import {
   Home,
@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <ItemListContainer greeting="Esto es una pruebaaaa"/>
+      <ItemListContainer greeting="Lista de productos"/>
       <Sidebar/>
       <Switch>
         <Route exact path='/'>
